@@ -1,4 +1,5 @@
 ﻿using System;
+using FSharpLibrary;
 
 namespace CSharpFSharpInterop
 {
@@ -6,7 +7,10 @@ namespace CSharpFSharpInterop
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int x = 2;
+            int y = 3;
+            Console.WriteLine($"{x} * {y} = {Multiplication.multiply(x, y)}");
+            Console.Read();
         }
     }
 }
